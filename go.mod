@@ -1,4 +1,4 @@
-module github.com/zhangkai8048/disko
+module github.com/anuvu/disko
 
 go 1.13
 
