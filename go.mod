@@ -16,4 +16,4 @@ require (
 )
 
 
-replace github.com/anuvu/disko => github.com/zhangkai8048/disko v0.0.9
+replace github.com/anuvu/disko => ./
