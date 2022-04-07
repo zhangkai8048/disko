@@ -1,4 +1,4 @@
-module github.com/anuvu/disko
+module github.com/zhangkai8048/disko
 
 go 1.13
 
@@ -13,3 +13,6 @@ require (
 	github.com/urfave/cli/v2 v2.1.1
 	golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a
 )
+
+
+replace github.com/anuvu/disko => github.com/zhangkai8048/disko v0.0.9

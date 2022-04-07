@@ -782,14 +782,14 @@ func genPartChangeUEvent(d disko.Disk, pSet disko.PartitionSet) error {
 		return nil
 	}
 
-	for _, p := range pSet {
-		uePath := fmt.Sprintf("/sys/class/block/%s/uevent", GetPartitionKname(d.Name, p.Number))
-		if err := ioutil.WriteFile(uePath, []byte("change"), 0600); err != nil && os.IsNotExist(err) {
-			return fmt.Errorf("%s did not exist: %v", uePath, err)
-		} else if err != nil {
-			return fmt.Errorf("failed to write 'change' to %s: %v", uePath, err)
-		}
-	}
+	// for _, p := range pSet {
+	// 	uePath := fmt.Sprintf("/sys/class/block/%s/uevent", GetPartitionKname(d.Name, p.Number))
+	// 	if err := ioutil.WriteFile(uePath, []byte("change"), 0600); err != nil && os.IsNotExist(err) {
+	// 		return fmt.Errorf("%s did not exist: %v", uePath, err)
+	// 	} else if err != nil {
+	// 		return fmt.Errorf("failed to write 'change' to %s: %v", uePath, err)
+	// 	}
+	// }
 
 	return nil
 }
